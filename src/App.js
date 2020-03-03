@@ -4,7 +4,7 @@ import './App.css';
 
 
 function App(props) {
-  
+  console.log(props.store.lists)
   const newList = props.store.lists.map(list => 
     <List header={list.header} cards={list.cardIds.map(id => props.store.allCards[id])} key={list.id} />
     );

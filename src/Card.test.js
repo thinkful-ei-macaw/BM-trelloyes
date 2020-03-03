@@ -16,6 +16,6 @@ describe('<Card />', () => {
         const card = renderer.create(<Card title='string' content='anotherstring'/>).toJSON();
         expect(card).toMatchSnapshot();
     })
-    });
+});
 
   
